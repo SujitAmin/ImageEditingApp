@@ -262,16 +262,6 @@ public class MotionView  extends FrameLayout {
         }
     }
 
-    private void moveEntityToBack(@Nullable MotionEntity entity) {
-        if (entity == null) {
-            return;
-        }
-        if (entities.remove(entity)) {
-            entities.add(0, entity);
-            invalidate();
-        }
-    }
-
     // gesture detectors
     private final View.OnTouchListener onTouchListener = new View.OnTouchListener() {
         @Override

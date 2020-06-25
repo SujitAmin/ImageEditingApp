@@ -70,16 +70,6 @@ public abstract class TwoFingerGestureDetector extends BaseGestureDetector {
         return mCurrLen;
     }
 
-    //Return the previous distance between the two pointers forming the
-    //gesture in progress.
-    public float getPreviousSpan() {
-        if (mPrevLen == -1) {
-            final float pvx = mPrevFingerDiffX;
-            final float pvy = mPrevFingerDiffY;
-            mPrevLen = (float) Math.sqrt(pvx * pvx + pvy * pvy);
-        }
-        return mPrevLen;
-    }
 
     //Check if we have a sloppy gesture.
     protected boolean isSloppyGesture(MotionEvent event) {

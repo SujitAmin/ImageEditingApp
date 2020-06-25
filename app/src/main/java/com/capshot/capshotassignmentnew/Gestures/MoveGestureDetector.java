@@ -94,14 +94,6 @@ public class MoveGestureDetector extends BaseGestureDetector {
         return new PointF(x / pCount, y / pCount);
     }
 
-    public float getFocusX() {
-        return mFocusExternal.x;
-    }
-
-    public float getFocusY() {
-        return mFocusExternal.y;
-    }
-
     public PointF getFocusDelta() {
         return mFocusDeltaExternal;
     }

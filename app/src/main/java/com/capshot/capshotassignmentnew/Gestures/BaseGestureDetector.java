@@ -64,23 +64,4 @@ public abstract class BaseGestureDetector {
         }
         mGestureInProgress = false;
     }
-
-
-    //inprogress or not
-    public boolean isInProgress() {
-        return mGestureInProgress;
-    }
-
-
-    //Return the time difference in milliseconds between the previous accepted GestureDetector event and the current GestureDetector event.
-    public long getTimeDelta() {
-        return mTimeDelta;
-    }
-
-
-    //Return the event time of the current GestureDetector event being processed.
-    public long getEventTime() {
-        return mCurrEvent.getEventTime();
-    }
-
 }
